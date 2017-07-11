@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import GenericInputPicker from '../commonComponents/formComponents/genericInputPicker';
 import Toggle from '../commonComponents/formComponents/toggle';
+import GenericSelect from '../commonComponents/formComponents/genericSelect';
 
 export default class SampleForm extends Component {
     constructor(props) {
@@ -30,6 +31,7 @@ export default class SampleForm extends Component {
                 <GenericInputPicker inputType={"date"} label={"Date"} onValueChange={this.handleDateChange}/>
                 <GenericInputPicker inputType={"text"} label={"Text"} onValueChange={this.handleTextChange}/>
                 <Toggle />
+                <GenericSelect currentValue={[{label: "Apple", value: "Apple"}]} />
                 
             </div>
         

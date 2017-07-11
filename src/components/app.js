@@ -23,7 +23,7 @@ class App extends Component {
             <div>
                 <NavigationBar title={this.state.siteTitle}/>
                 <Modal />  
-                <Footer />                                                  
+                                                            
             </div>
 
         );

@@ -53,3 +53,30 @@ input:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px); }
+
+.rectClass {
+  width:50;
+  height:50;
+  fill:rgb(0,0,255);
+  stroke-width:1;
+  stroke:rgb(0,0,0);
+}
+
+.triangleClass {
+  fill:white;
+  stroke:black;
+  stroke-width:1;
+}
+
+.dropdown-menu-items {
+  display: none;
+}
+
+.dropdown-toggle-hover:hover .dropdown-menu-items {
+  display: block;
+  color: black;
+}
+
+.cart-item {
+  border: 2px solid black;
+}

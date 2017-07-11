@@ -23,6 +23,7 @@
     "axios": "^0.16.2",
     "babel-preset-stage-1": "^6.1.18",
     "eslint": "^4.0.0",
+    "eslint-plugin-react": "^7.1.0",
     "highcharts": "^5.0.12",
     "lodash": "^3.10.1",
     "react": "^15.6.0",

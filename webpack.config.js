@@ -7,7 +7,8 @@ module.exports = {
   plugins: [
     new webpack.DefinePlugin({
       'process.env': {
-        'NODE_ENV': JSON.stringify('dev')        
+        'NODE_ENV': JSON.stringify('dev') ,
+        'EMPLOYEE_SERVICE_API': JSON.stringify('http://lnyeqtdsap1u.nam.nsroot.net:8443/employee-service/api/v1/employee/details/')      
       }
     })
   ],

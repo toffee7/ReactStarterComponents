@@ -4,9 +4,9 @@ import { BootstrapTable, TableHeaderColumn } from 'react-bootstrap-table';
 const CustomTable = (props) => {
     return (
         <BootstrapTable data={props.data} striped={true} hover={true}>
-            <TableHeaderColumn dataField="id" isKey={true} dataAlign="center" dataSort={true}>ID</TableHeaderColumn>
-            <TableHeaderColumn dataField="name" dataSort={true}>Product Name</TableHeaderColumn>
-            <TableHeaderColumn dataField="price" >Product Price</TableHeaderColumn>
+            <TableHeaderColumn dataField="employeeGEID" isKey={true} dataAlign="center" dataSort={true}>ID</TableHeaderColumn>
+            <TableHeaderColumn dataField="employeeName" dataSort={true}>Name</TableHeaderColumn>
+            <TableHeaderColumn dataField="employeePhotoLink" >Photo Link</TableHeaderColumn>
         </BootstrapTable>
     );
 }

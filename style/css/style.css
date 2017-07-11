@@ -1,8 +1,9 @@
+body {
+  font: 100% Helvetica, sans-serif; }
+
 .footer-class {
-    bottom: 0;
-    position: absolute;
-}
+  bottom: 0;
+  position: absolute; }
 
 .navbar-spacing {
-    margin-bottom: 20px;
-}
+  margin-bottom: 20px; }

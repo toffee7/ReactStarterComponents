@@ -9,6 +9,6 @@ const CustomTable = (props) => {
             <TableHeaderColumn dataField="employeePhotoLink" >Photo Link</TableHeaderColumn>
         </BootstrapTable>
     );
-}
+};
 
 export default CustomTable;

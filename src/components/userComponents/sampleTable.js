@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import CustomTable from '../commonComponents/customTable';
 import axios from 'axios';
 
-var products = [];
-
 export default class SampleTable extends Component {
     constructor(props) {
         super(props);

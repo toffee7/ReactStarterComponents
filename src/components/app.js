@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom';
 
 import NavigationBar from './commonComponents/navigationBar';
 import Footer from './commonComponents/footer';
+import Modal from './commonComponents/customModal';
 
 class App extends Component {
     constructor(props) {
@@ -20,7 +21,8 @@ class App extends Component {
     render() {
         return  (
             <div>
-                <NavigationBar title={this.state.siteTitle}/>  
+                <NavigationBar title={this.state.siteTitle}/>
+                <Modal />  
                 <Footer />                                                  
             </div>
 

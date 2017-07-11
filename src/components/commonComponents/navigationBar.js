@@ -24,6 +24,7 @@ const NavigationBar = (props) => {
                 <Link className="dropdown-item" to="/tile">Tiles</Link>
                 <Link className="dropdown-item" to="/tabbedpane">Pane</Link>
                 <Link className="dropdown-item" to="/form">Form</Link>
+                <a className="dropdown-item" data-toggle="modal" data-target="#myModal">Modal</a>
               </div>
             </li>
           </ul>

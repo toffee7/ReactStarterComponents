@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import GenericInputPicker from '../commonComponents/formComponents/genericInputPicker';
+import Toggle from '../commonComponents/formComponents/toggle';
 
 export default class SampleForm extends Component {
     constructor(props) {
@@ -28,7 +29,7 @@ export default class SampleForm extends Component {
                 <GenericInputPicker inputType={"time"} label={"Time"} onValueChange={this.handleTimeChange}/>
                 <GenericInputPicker inputType={"date"} label={"Date"} onValueChange={this.handleDateChange}/>
                 <GenericInputPicker inputType={"text"} label={"Text"} onValueChange={this.handleTextChange}/>
-                
+                <Toggle />
                 
             </div>
         

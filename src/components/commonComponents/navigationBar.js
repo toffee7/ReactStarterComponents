@@ -34,6 +34,6 @@ const NavigationBar = (props) => {
         </div>
 </nav>
     );
-}
+};
 
 export default NavigationBar;

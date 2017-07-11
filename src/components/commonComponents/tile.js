@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
 
-const style = {
-    width: 150,
-    height: 140,
-    padding: 10
-};
-
 const Tile = (props) => {
     
      return (

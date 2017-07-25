@@ -10,7 +10,7 @@ class App extends Component {
         super(props);     
         this.handleNavigation = this.handleNavigation.bind(this);   
         this.state = {
-            siteTitle: "I Love You Sayli"
+            siteTitle: "React Express"
         };
     }
 

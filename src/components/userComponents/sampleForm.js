@@ -31,8 +31,9 @@ export default class SampleForm extends Component {
                 <GenericInputPicker inputType={"date"} label={"Date"} onValueChange={this.handleDateChange}/>
                 <GenericInputPicker inputType={"text"} label={"Text"} onValueChange={this.handleTextChange}/>
                 <Toggle />
+                <Toggle />
                 <GenericSelect currentValue={[{label: "Apple", value: "Apple"}]} />
-                
+                <GenericSelect currentValue={[{label: "Google", value: "Apple"}]} />
             </div>
         
         );

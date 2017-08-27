@@ -4,7 +4,7 @@
   "description": "This application provides boilerplate for react-highcharts starter",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --port 9095",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js --port 9090",
     "build": "webpack -p --config ./webpack.config.js",
     "test": "karma start",
     "test:watch": "npm run test -- --watch",

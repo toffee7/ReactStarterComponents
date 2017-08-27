@@ -1,0 +1,87 @@
+{  
+    "nodes":[  
+       {  
+          "name":"Source 1"
+       },
+       {  
+          "name":"Source 2"
+       },
+       {  
+          "name":"Source 3"
+       },
+       {  
+          "name":"Source 4"
+       },
+       {  
+          "name":"Subject Area 1"
+       },
+       {  
+          "name":"Subject Area 2"
+       },
+       {  
+          "name":"Subject Area 3"
+       },
+       {  
+          "name":"Subject Area 4"
+       },
+       {  
+          "name":"Location 1"
+       },
+       {  
+          "name":"Location 2"
+       },
+       {  
+          "name":"Location 3"
+       },
+       {  
+          "name":"Location 4"
+       }
+    ],
+    "links":[  
+       {  
+          "source":0,
+          "target":4,
+          "value":100
+       },
+       {  
+          "source":1,
+          "target":4,
+          "value":100
+       },
+       {  
+        "source":1,
+        "target":5,
+        "value":100
+        },
+       {  
+          "source":2,
+          "target":5,
+          "value":100
+       },
+       {  
+          "source":3,
+          "target":5,
+          "value":100
+       },
+       {  
+          "source":1,
+          "target":5,
+          "value":100
+       },
+       {  
+          "source":3,
+          "target":2,
+          "value":100
+       },
+       {  
+          "source":4,
+          "target":8,
+          "value":35
+       },
+       {  
+          "source":3,
+          "target":9,
+          "value":100
+       }
+    ]
+ }

@@ -13,6 +13,10 @@ const NavigationBar = (props) => {
             <li className="nav-item">
               <Link className="nav-link" to="/">Home</Link>
             </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/dataflow">Data Flow</Link>
+            </li>
             
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

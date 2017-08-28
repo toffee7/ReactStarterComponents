@@ -7,7 +7,7 @@ export default class GenericSelect extends Component {
         super(props);
         this.handleSelectChange = this.handleSelectChange.bind(this);
         this.state = {
-            options: [{label: "Apple", value: "Apple"},{label: "Google", value: "Google"}],
+            options: this.props.options || [{label: "Apple", value: "Apple"},{label: "Google", value: "Google"}],
             value: []
         };
     }

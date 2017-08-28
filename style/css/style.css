@@ -80,3 +80,26 @@ input:checked + .slider:before {
 .cart-item {
   border: 2px solid black;
 }
+
+/* sankey chart css */
+.node rect {
+  cursor: move;
+  fill-opacity: .9;
+  shape-rendering: crispEdges;
+}
+ 
+.node text {
+  pointer-events: none;
+  text-shadow: 0 1px 0 #fff;
+}
+ 
+.link {
+  fill: none;
+  stroke: #000000;
+  stroke-opacity: .2;
+}
+ 
+.link:hover {
+  stroke-opacity: .5;
+  stroke: #002745;
+}

@@ -19,17 +19,18 @@ export default class LinkageChart extends Component {
         height = +svg.attr("height");
     
         var formatNumber = d3.format(",.0f"),
-            format = function(d) { return formatNumber(d) + " TWh"; },
+            format = function(d) { return formatNumber(d) ; },
             color = d3.scaleOrdinal(d3.schemeCategory10);
         
         var sankey = d3.sankey()
-            .nodeWidth(15)
-            .nodePadding(10)
+            .nodeWidth(10)
+            .nodePadding(20)
             .extent([[1, 1], [width - 1, height - 6]]);
         
         var link = svg.append("g")
-            .attr("class", "links")
+            
             .attr("fill", "none")
+            
             .attr("stroke", "#000")
             .attr("stroke-opacity", 0.2)
         .selectAll("path");
@@ -37,7 +38,7 @@ export default class LinkageChart extends Component {
         var node = svg.append("g")
             .attr("class", "nodes")
             .attr("font-family", "sans-serif")
-            .attr("font-size", 10)
+            .attr("font-size", 14)
         .selectAll("g");
         
         d3.json("../sampleObject.json", function(error, energy) {
@@ -49,10 +50,11 @@ export default class LinkageChart extends Component {
             .data(energy.links)
             .enter().append("path")
             .attr("d", d3.sankeyLinkHorizontal())
+            .attr("class", "link")
             .attr("stroke-width", function(d) { return Math.max(1, d.width); });
-        
+        //tooltip value
         link.append("title")
-            .text(function(d) { return d.source.name + " → " + d.target.name + "\n" + format(d.value); });
+            .text(function(d) { return d.source.name + " → " + d.target.name; });
         
         node = node
             .data(energy.nodes)
@@ -78,6 +80,8 @@ export default class LinkageChart extends Component {
         
         node.append("title")
             .text(function(d) { return d.name + "\n" + format(d.value); });
+            
         });
+        
     }
 }

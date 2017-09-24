@@ -10,7 +10,7 @@ import SampleOptionsTile from './components/userComponents/sampleOptionsTile';
 import SampleTabbedPane from './components/userComponents/sampleTabbedPane';
 import SampleForm from './components/userComponents/sampleForm';
 import Inventory from './components/userComponents/inventory';
-
+import Message from './components/userComponents/message';
 
 ReactDOM.render(
     <BrowserRouter>
@@ -23,6 +23,7 @@ ReactDOM.render(
                 <Route path="/form" component={SampleForm}/>                  
                 <Route path="/dataflow" component={DataFlowContainer} />
                 <Route path="/shopping" component={Inventory} />
+                <Route path="/tanushree" component={Message} />
         </div>       
     </BrowserRouter>
 , document.querySelector('.root'));
